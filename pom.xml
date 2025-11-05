@@ -23,6 +23,17 @@
 
   <build>
     <finalName>Barista_cafe</finalName>
+    <plugins>
+      <plugin>
+        <artifactId>maven-war-plugin</artifactId>
+        <version>3.4.0</version>
+        <configuration>
+          <!-- Webapp source directory -->
+          <warSourceDirectory>src/main/webapp</warSourceDirectory>
+          <!-- Ensure web.xml is picked -->
+          <failOnMissingWebXml>true</failOnMissingWebXml>
+        </configuration>
+      </plugin>
+    </plugins>
   </build>
 </project>
-
